@@ -13,11 +13,15 @@ def main():
         [2, 4, 1, 3, 5],
     ]
 
+    expected = [1, 2, 3, 4, 5]
+
     for i in input:
         print('Before: {}'.format(i))
         sorted_list = bubble_sort(i)
         print('After: {}'.format(sorted_list))
         print()
+
+        assert expected == [1, 2, 3, 4, 5]
 
 
 if __name__ == '__main__':

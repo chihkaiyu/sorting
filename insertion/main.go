@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	input := [][]int{
+	test := [][]int{
 		{1, 2, 3, 4, 5},
 		{5, 4, 3, 2, 1},
 		{2, 4, 1, 3, 5},
@@ -14,7 +14,7 @@ func main() {
 
 	expected := []int{1, 2, 3, 4, 5}
 
-	for _, i := range input {
+	for _, i := range test {
 		fmt.Printf("Before: %v\n", i)
 		sortedInput := insertionSort(i)
 		fmt.Printf("After: %v\n", sortedInput)

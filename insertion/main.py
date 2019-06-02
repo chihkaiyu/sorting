@@ -7,7 +7,7 @@ def insertion_sort(nums):
 
 
 def main():
-    input = [
+    test = [
         [1, 2, 3, 4, 5],
         [5, 4, 3, 2, 1],
         [2, 4, 1, 3, 5],
@@ -15,13 +15,13 @@ def main():
 
     expected = [1, 2, 3, 4, 5]
 
-    for i in input:
+    for i in test:
         print('Before: {}'.format(i))
         sorted_list = insertion_sort(i)
         print('After: {}'.format(sorted_list))
         print()
 
-        assert expected == [1, 2, 3, 4, 5]
+        assert sorted_list == expected
 
 
 if __name__ == '__main__':
